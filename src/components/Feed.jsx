@@ -32,8 +32,7 @@ const Feed = () => {
           variant="body2"
           sx={{ mt: 1.5, color: '#fff' }}
         >
-          &copy;Amirossein.Tech
-          {new Date().getFullYear()}
+          Amirossein.Tech &copy;{new Date().getFullYear()}
         </Typography>
       </Box>
       <Box p={2} sx={{ overflowY: 'auto', height: '90vh', flex: 2 }}>
