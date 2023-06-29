@@ -1,6 +1,6 @@
 # YouTube Clone Project Documentation
 
-[https://vimeo.amirossein.tech/](https://vimeo.amirossein.tech/)
+### Demo: [Vimeo](https://vimeo.amirossein.tech/)
 
 ## Introduction
 
@@ -27,17 +27,55 @@ The YouTube Clone project follows a modular architecture, ensuring separation of
 
 The project interacts with the Rapid API to fetch video and channel data. Axios facilitates the communication between the project and the API, allowing the retrieval and display of search results.
 
-## Deployment on the Web
+## Deployment on the Web using Vercel
 
-The YouTube Clone project can be accessed and deployed on the web using the following URL: [https://vimeo.amirossein.tech/](https://vimeo.amirossein.tech/)
+To deploy the YouTube Clone project on Vercel, follow these steps:
 
-To deploy the YouTube Clone project on the web, follow these steps:
+1. Create a Vercel account: Sign up for a Vercel account at [vercel.com](https://vercel.com) if you haven't already.
 
-1. Set up a web server or hosting environment capable of serving static files.
-2. Build the project using a build tool like webpack or create-react-app.
-3. Transfer the generated build files to the web server's document root or the appropriate directory.
-4. Configure the web server to serve the project files, ensuring proper routing and access to the necessary resources.
-5. Make sure the deployed project has the required dependencies, including React, React Router DOM, Material UI, Emotion Style, and Axios.
+2. Install the Vercel CLI: Install the Vercel command-line interface (CLI) globally on your local machine by running the following command:
+
+   ```bash
+   npm install -g vercel
+   ```
+
+3. Build the project: Ensure that you have the project's dependencies installed by running the following command in your project's root directory:
+
+   ```bash
+   npm install
+   ```
+
+   Next, build the project using the build tool of your choice. For example, if you are using create-react-app, run:
+
+   ```bash
+   npm run build
+   ```
+
+   This command will generate the optimized production build of your project.
+
+4. Deploy to Vercel: Once the build process is complete, navigate to your project's root directory and deploy the project to Vercel using the following command:
+
+   ```bash
+   vercel
+   ```
+
+   The Vercel CLI will guide you through the deployment process. You may be prompted to log in to your Vercel account and select the project name.
+
+5. Configure the deployment settings: During the deployment process, Vercel will provide you with various configuration options. Ensure that the following settings are correctly configured:
+
+   - Root directory: Specify the directory where the build files are located. This is typically the `build` or `dist` directory.
+   - Build command: If prompted, provide the build command needed to generate the production build of your project. For example, `npm run build`.
+   - Environment variables: If your project requires any environment variables, set them accordingly in the Vercel deployment settings.
+
+6. Deploy the project: Once all the settings are configured, confirm the deployment to proceed. Vercel will upload your project's build files and deploy them to a unique URL.
+
+7. Access the deployed project: After the deployment is successful, Vercel will provide you with the URL where your project is deployed. You can access your YouTube Clone project on the web using this URL.
+
+   Example URL: `https://your-project-name.vercel.app`
+
+Ensure that your YouTube Clone project includes all the required dependencies, including React, React Router DOM, Material UI, Emotion Style, and Axios. These dependencies should be specified in your project's `package.json` file.
+
+Note: The deployment steps provided above assume that you have a basic understanding of the Vercel platform and have set up your project's configuration accordingly.
 
 ## Major Components
 
@@ -55,11 +93,8 @@ The channel listing component displays the search results for channels, includin
 
 ### Media Viewer
 
-This component provides an interface to view the selected video or media content. It presents the video player, allowing users to play, pause, seek, and control the playback of the video.
+This component provides an interface to view the selected video or media content. It presents the video player, allowing users to play, pause, seek, and control the playback of the video. Created using React player library.
 
-### Error Handling
-
-The project incorporates error handling components to display appropriate messages when search results are not available or when errors occur during API communication.
 
 In conclusion, the YouTube Clone project delivers a simplified video discovery and viewing experience, allowing users to search for videos and channels and view the associated media content. By utilizing React, React Router DOM, Material UI, Emotion Style, Rapid API, and Axios, the project offers a user-friendly interface and efficient data retrieval from the API.
 
