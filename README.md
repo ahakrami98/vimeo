@@ -4,7 +4,7 @@
 
 ## Introduction
 
-This documentation provides an overview of the YouTube Clone project developed for the Software Design class. The project aims to replicate the core features of YouTube, allowing users to search and view videos and channels. It leverages modern web technologies to deliver a user-friendly and engaging experience.
+This documentation provides an overview of the YouTube Clone project developed for the Software Design class [ Dr.Karegar ] . The project aims to replicate the core features of YouTube, allowing users to search and view videos and channels. It leverages modern web technologies to deliver a user-friendly and engaging experience.
 
 ## Useability
 
